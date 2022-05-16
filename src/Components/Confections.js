@@ -1,18 +1,26 @@
 import React from "react";
 import "./Confections.css";
 
-function Confections () {
+function Confections ({ confectionItems }) {
+
+    const listItems = confectionItems.map((item) => {
+        return (
+            <div className="card">
+                <div className="container">
+            <img src={item.picture}/>
+            <h3>{item.name}</h3>
+            <h4>{item.description}</h4>
+            <h4>{item.type}</h4>
+            <h4>$ {item.price} / dozen</h4>
+            </div>
+            </div>
+        )
+    })
 
     return (
         <div>
             <h2>Confections</h2>
-            <div className="card">
-                <div className="container">
-                <img alt="picture"></img>
-                <h3>Name</h3>
-                <h4>Description</h4>
-                <h4>Type</h4>
-                <h4>Price</h4>
+                {listItems}
                 {/* List items here - we need in database array:
                 -ID
                 -Images
@@ -20,8 +28,6 @@ function Confections () {
                 -Descprtions
                 -Category
                 -Price */}
-            </div>
-        </div>
         </div>
     )
 

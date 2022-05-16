@@ -6,7 +6,9 @@
           "picture": "",
           "description": "Description of item",
           "type": "Type of item",
-          "price": 0
+          "price": 0,
+          "active": true,
+          "incart": 0
       },
       {
           "id": 2,
@@ -14,7 +16,9 @@
           "picture": "",
           "description": "Description of item",
           "type": "Type of item",
-          "price": 0
+          "price": 0,
+          "active": true,
+          "incart": 0
       }
   ]
 }

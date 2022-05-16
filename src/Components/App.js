@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import './App.css';
 import NavBar from "./NavBar";
@@ -10,6 +10,16 @@ import Order from "./Order";
 import Contact from "./Contact";
 
 function App() {
+
+  const [confectionItems, setConfectionItems] = useState([]);
+
+
+  useEffect(() => {
+    fetch("http://localhost:3003/confections")
+    .then((response) => response.json())
+    .then((data) => setConfectionItems(data))
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
@@ -23,7 +33,7 @@ function App() {
             <About />
           </Route>
           <Route exact path="/confections">
-            <Confections />
+            <Confections confectionItems={confectionItems}/>
           </Route>
           <Route exact path="/contact">
             <Contact />
@@ -31,9 +41,11 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          
         </Switch>
-
+        </div>
+        <div>
+          <Filter />
+          <Order />
         <br></br>
         <footer>
           <br></br>

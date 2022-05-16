@@ -4,7 +4,7 @@ function Filter () {
 
     return (
         <div>
-            <h2>Filter</h2>
+            <h2></h2>
         </div>
     )
 }

@@ -5,22 +5,23 @@ function NavBar() {
 
 return (
     <div>
-    <NavLink
+        <br></br>
+    <NavLink style={{ textDecoration: 'none' }}
         to="/"
         exact>
             Home &ensp;
-    </NavLink>
-    <NavLink
+    </NavLink >
+    <NavLink style={{ textDecoration: 'none' }}
         to="/about"
         exact>
             About &ensp;
     </NavLink>
-    <NavLink
+    <NavLink style={{ textDecoration: 'none' }}
         to="/confections"
         exact>
             Confections &ensp;
     </NavLink>
-    <NavLink
+    <NavLink style={{ textDecoration: 'none' }}
         to="/contact"
         exact>
             Contact &ensp;
