@@ -5,6 +5,9 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import About from "./About";
 import Confections from "./Confections"
+import Filter from "./Filter";
+import Order from "./Order";
+import Contact from "./Contact";
 
 function App() {
   return (
