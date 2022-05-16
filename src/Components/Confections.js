@@ -6,8 +6,8 @@ function Confections () {
     return (
         <div>
             <h2>Confections</h2>
-            <div class="card">
-                <div class="container">
+            <div className="card">
+                <div className="container">
                 <img alt="picture"></img>
                 <h3>Name</h3>
                 <h4>Description</h4>
