@@ -22,22 +22,24 @@ function App() {
           <Route exact path="/about">
             <About />
           </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
           <Route exact path="/confections">
             <Confections />
           </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          
         </Switch>
 
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        Social Media Links Here
+        <footer>
+          <br></br>
+          Social Media Links Here
+          <br></br>
+        </footer>
       </div>
     </div>
   );

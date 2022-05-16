@@ -20,6 +20,11 @@ return (
         exact>
             Confections &ensp;
     </NavLink>
+    <NavLink
+        to="/contact"
+        exact>
+            Contact &ensp;
+        </NavLink>
     </div>
 )
 
