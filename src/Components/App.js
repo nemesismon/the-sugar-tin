@@ -4,7 +4,7 @@ import './App.css';
 import NavBar from "./NavBar";
 import Home from "./Home";
 import About from "./About";
-import Confections from "./Confections.js"
+import Confections from "./Confections"
 
 function App() {
   return (
