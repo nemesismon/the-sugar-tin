@@ -1,19 +1,20 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "confections": [
+      {
+          "id": 1,
+          "name": "Cupcake/cookie name/flavor",
+          "picture": "",
+          "description": "Description of item",
+          "type": "Type of item",
+          "price": 0
+      },
+      {
+          "id": 2,
+          "name": "Cupcake/cookie name/flavor",
+          "picture": "",
+          "description": "Description of item",
+          "type": "Type of item",
+          "price": 0
+      }
+  ]
 }
