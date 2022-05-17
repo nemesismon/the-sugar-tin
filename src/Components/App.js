@@ -35,6 +35,9 @@ function App() {
           <Route exact path="/confections">
             <Confections confectionItems={confectionItems}/>
           </Route>
+          <Route exact path="/order">
+            <Order />
+          </Route>
           <Route exact path="/contact">
             <Contact />
           </Route>
@@ -45,7 +48,6 @@ function App() {
         </div>
         <div>
           <Filter />
-          <Order />
         <br></br>
         <footer>
           <br></br>

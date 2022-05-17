@@ -22,6 +22,11 @@ return (
             Confections &ensp;
     </NavLink>
     <NavLink style={{ textDecoration: 'none' }}
+        to="/order"
+        exact>
+            Order &ensp;
+    </NavLink>
+    <NavLink style={{ textDecoration: 'none' }}
         to="/contact"
         exact>
             Contact &ensp;

@@ -3,16 +3,22 @@ import "./Confections.css";
 
 function Confections ({ confectionItems }) {
 
+    const handleOrderClick = ({item}) => {
+        item.incart += 1;
+        console.log(item.incart);
+    }
+
     const listItems = confectionItems.map((item) => {
         return (
             <div className="card">
-                <div className="container">
-            <img src={item.picture}/>
-            <h3>{item.name}</h3>
-            <h4>{item.description}</h4>
-            <h4>{item.type}</h4>
-            <h4>$ {item.price} / dozen</h4>
-            </div>
+                <div key={item.id} name={item.name} className="container">
+                    <img src={item.picture} alt={item.name}/>
+                    <h3>{item.name}</h3>
+                    <h4>{item.description}</h4>
+                    <h4>{item.type}</h4>
+                    <h4>$ {item.price} / dozen</h4>
+                    <button onClick={() => handleOrderClick({item})}>Add To Cart</button>
+                </div>
             </div>
         )
     })
@@ -20,14 +26,7 @@ function Confections ({ confectionItems }) {
     return (
         <div>
             <h2>Confections</h2>
-                {listItems}
-                {/* List items here - we need in database array:
-                -ID
-                -Images
-                -Names
-                -Descprtions
-                -Category
-                -Price */}
+            {listItems}
         </div>
     )
 
