@@ -12,7 +12,7 @@ import Contact from "./Contact";
 function App() {
 
   const [confectionItems, setConfectionItems] = useState([]);
-
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     fetch("http://localhost:3003/confections")
@@ -23,8 +23,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <h1>The Sugar Tin</h1>
+        <img src="./the_sugar_tin.jpg" alt="logo" className="Logo"/>
       </header>
       <div>
         <NavBar />
@@ -36,7 +35,7 @@ function App() {
             <Confections confectionItems={confectionItems}/>
           </Route>
           <Route exact path="/order">
-            <Order />
+            <Order confectionItems={confectionItems}/>
           </Route>
           <Route exact path="/contact">
             <Contact />

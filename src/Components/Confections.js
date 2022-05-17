@@ -3,9 +3,10 @@ import "./Confections.css";
 
 function Confections ({ confectionItems }) {
 
-    const handleOrderClick = ({item}) => {
+    const handleOrderClick = (item) => {
         item.incart += 1;
-        console.log(item.incart);
+        // console.log(item.incart)
+        // console.log(confectionItems)
     }
 
     const listItems = confectionItems.map((item) => {
@@ -17,11 +18,13 @@ function Confections ({ confectionItems }) {
                     <h4>{item.description}</h4>
                     <h4>{item.type}</h4>
                     <h4>$ {item.price} / dozen</h4>
-                    <button onClick={() => handleOrderClick({item})}>Add To Cart</button>
+                    <button onClick={() => handleOrderClick(item)}>Add To Cart</button>
                 </div>
             </div>
         )
     })
+
+    // console.log(confectionItems)
 
     return (
         <div>
