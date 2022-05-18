@@ -12,13 +12,19 @@ import Contact from "./Contact";
 function App() {
 
   const [confectionItems, setConfectionItems] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     fetch("http://localhost:3003/confections")
     .then((response) => response.json())
     .then((data) => setConfectionItems(data))
   }, [])
+
+  const handleOrderClick = (item) => {
+    item.incart += 1;
+    console.log(item.incart)
+    item.carttotal = item.incart * item.price;
+    console.log(confectionItems)
+  }
 
   return (
     <div className="App">
@@ -32,7 +38,7 @@ function App() {
             <About />
           </Route>
           <Route exact path="/confections">
-            <Confections confectionItems={confectionItems}/>
+            <Confections confectionItems={confectionItems} handleOrderClick={handleOrderClick}/>
           </Route>
           <Route exact path="/order">
             <Order confectionItems={confectionItems}/>
@@ -50,7 +56,7 @@ function App() {
         <br></br>
         <footer>
           <br></br>
-          Social Media Links Here
+          The Sugar Tin
           <br></br>
         </footer>
       </div>

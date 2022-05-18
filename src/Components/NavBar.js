@@ -6,6 +6,7 @@ function NavBar() {
 return (
     <div>
         <br></br>
+        <b>
     <NavLink style={{ textDecoration: 'none' }}
         to="/"
         exact>
@@ -31,6 +32,7 @@ return (
         exact>
             Contact &ensp;
         </NavLink>
+        </b>
     </div>
 )
 

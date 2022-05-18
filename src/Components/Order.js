@@ -2,25 +2,37 @@ import React from "react";
 
 function Order ({ confectionItems }) {
 
-    console.log(confectionItems)
+    let totalPrice = 0;
 
-    const filterIncartItems = confectionItems.filter((item) => item.incart > 0)
-        
-    const currentCart = filterIncartItems.map((item) => {
+    const orderHandler = () => {
+        if (totalPrice === 0 ) {
+            return (
+                <div>
+                    <h3>Please check out our Confections!</h3>
+                </div>
+            )
+        } else {
+
+            confectionItems.filter((item) => item.incart > 0).map((item) => {
 
             const extendedPrice = item.incart * item.price;
+            totalPrice = totalPrice + extendedPrice;
+            console.log(totalPrice)
+            
             return (
             <div key={item.id} className="ordered-items">
-                <h4>{item.name} &emsp; &emsp; Quantity: {item.incart} dozen &emsp; &emsp; $ {item.price} &emsp; &emsp; $ {extendedPrice}</h4>
+                <h4>{item.name} &emsp; &emsp; Quantity: {item.incart} dozen &emsp; &emsp; $ {(item.price).toFixed(2)} &emsp; &emsp; $ {(extendedPrice).toFixed(2)}</h4>
             </div>
-            )         
-    })
-
+            )})   
+        }
+    }       
+        
     return (
         <div>
             <h2>Order</h2>
-            {currentCart}
-            <h3> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; TOTAL $ </h3>
+            {orderHandler()}
+            <br></br>
+            <h3> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; TOTAL &emsp; $ {(totalPrice).toFixed(2)} </h3>
         </div>
     )
 }

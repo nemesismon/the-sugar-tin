@@ -1,24 +1,18 @@
 import React from "react";
 import "./Confections.css";
 
-function Confections ({ confectionItems }) {
-
-    const handleOrderClick = (item) => {
-        item.incart += 1;
-        // console.log(item.incart)
-        // console.log(confectionItems)
-    }
+function Confections ({ confectionItems, handleOrderClick }) {
 
     const listItems = confectionItems.map((item) => {
         return (
-            <div className="card">
-                <div key={item.id} name={item.name} className="container">
-                    <img src={item.picture} alt={item.name}/>
-                    <h3>{item.name}</h3>
-                    <h4>{item.description}</h4>
-                    <h4>{item.type}</h4>
-                    <h4>$ {item.price} / dozen</h4>
-                    <button onClick={() => handleOrderClick(item)}>Add To Cart</button>
+            <div key={item.id} name={item.name} className="card">
+                <div className="container">
+                    <img src={item.picture} alt={item.name} className="picture"/>
+                    <h3 className="name">{item.name}</h3>
+                    <h4 className="description">{item.description}</h4>
+                    <h4 className="type">{item.type}</h4>
+                    <h4 className="price">$ {(item.price).toFixed(2)} / dozen</h4>
+                    <button onClick={() => handleOrderClick(item)}>Add To Order</button>
                 </div>
             </div>
         )

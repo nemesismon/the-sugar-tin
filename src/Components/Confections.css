@@ -5,9 +5,27 @@
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 50px rgba(0,0,0,0.2);
 }
 
 .container {
     padding: 2px 16px;
+}
+
+.picture {
+    left: 0px;
+    width: 125;
+    height: 125;
+}
+
+.name {
+    position: relative;
+}
+
+.description {
+    position: relative;
+}
+
+.type {
+    position: 0;
 }

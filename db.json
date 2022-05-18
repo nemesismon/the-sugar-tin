@@ -8,7 +8,8 @@
           "type": "Type of item",
           "price": 20.00,
           "active": true,
-          "incart": 0
+          "incart": 0,
+          "carttotal": 0.00
       },
       {
           "id": 1,
@@ -18,7 +19,8 @@
           "type": "Type of item",
           "price": 30.00,
           "active": true,
-          "incart": 0
+          "incart": 0,
+          "carttotal": 0.00
       }
   ]
 }
