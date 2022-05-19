@@ -12,6 +12,7 @@ import Contact from "./Contact";
 function App() {
 
   const [confectionItems, setConfectionItems] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0)
 
   useEffect(() => {
     fetch("http://localhost:3003/confections")
@@ -24,6 +25,7 @@ function App() {
     console.log(item.incart)
     item.carttotal = item.incart * item.price;
     console.log(confectionItems)
+    setTotalPrice([...totalPrice, item.carttotal])
   }
 
   return (
@@ -41,7 +43,7 @@ function App() {
             <Confections confectionItems={confectionItems} handleOrderClick={handleOrderClick}/>
           </Route>
           <Route exact path="/order">
-            <Order confectionItems={confectionItems}/>
+            <Order confectionItems={confectionItems} totalPrice={totalPrice}/>
           </Route>
           <Route exact path="/contact">
             <Contact />

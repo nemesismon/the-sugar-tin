@@ -1,31 +1,27 @@
 import React from "react";
 
-function Order ({ confectionItems }) {
-
-    let totalPrice = 0;
+function Order ({ confectionItems, totalPrice }) {
 
     const orderHandler = () => {
-        if (totalPrice === 0 ) {
+        if (totalPrice > 0) {
+        
+            confectionItems.filter((item) => item.incart > 0).map((item) => {
+
+            const extendedPrice = item.incart * item.price;
+
+            return (
+                <div key={item.id} className="ordered-items">
+                    <h4>{item.name} &emsp; &emsp; Quantity: {item.incart} dozen &emsp; &emsp; $ {(item.price).toFixed(2)} &emsp; &emsp; $ {(extendedPrice).toFixed(2)}</h4>
+                </div>
+            )})
+        } else {        
             return (
                 <div>
                     <h3>Please check out our Confections!</h3>
                 </div>
-            )
-        } else {
-
-            confectionItems.filter((item) => item.incart > 0).map((item) => {
-
-            const extendedPrice = item.incart * item.price;
-            totalPrice = totalPrice + extendedPrice;
-            console.log(totalPrice)
-            
-            return (
-            <div key={item.id} className="ordered-items">
-                <h4>{item.name} &emsp; &emsp; Quantity: {item.incart} dozen &emsp; &emsp; $ {(item.price).toFixed(2)} &emsp; &emsp; $ {(extendedPrice).toFixed(2)}</h4>
-            </div>
-            )})   
-        }
-    }       
+            )     
+        }  
+    }
         
     return (
         <div>
