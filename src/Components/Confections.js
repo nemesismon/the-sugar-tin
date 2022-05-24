@@ -18,8 +18,6 @@ function Confections ({ confectionItems, handleOrderClick }) {
         )
     })
 
-    // console.log(confectionItems)
-
     return (
         <div>
             <h2>Confections</h2>

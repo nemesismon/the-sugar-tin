@@ -1,6 +1,6 @@
 import React from "react";
 
-function Order ({ confectionItems, totalPrice }) {
+function Order ({ cartItems, totalPrice, confectionItems }) {
 
     const orderHandler = () => {
         if (totalPrice > 0) {
