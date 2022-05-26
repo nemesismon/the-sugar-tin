@@ -34,7 +34,15 @@ function App() {
     setTotalQuantity(totalQuantity + 1)
   }
 
-  console.log(confectionItems)
+  // console.log(confectionItems)
+
+  const handleContactEntry = (event) => {
+    event.preventDefault()
+    useEffect(() => {
+
+    }, [])
+    console.log('hi')
+  }
 
   return (
     <div className="App">
@@ -54,7 +62,7 @@ function App() {
             <Order confectionItems={confectionItems} totalPrice={totalPrice} totalQuantity={totalQuantity}/>
           </Route>
           <Route exact path="/contact">
-            <Contact />
+            <Contact handleContactEntry={handleContactEntry}/>
           </Route>
           <Route exact path="/">
             <Home />
