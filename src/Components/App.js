@@ -13,10 +13,12 @@ function App() {
 
   const [confectionItems, setConfectionItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0)
-  const [cart, setCart] = useState({
-    total: 0,
-    inCart: 0
-  })
+  const [totalQuantity, setTotalQuantity] = useState(0)
+  // const [totalItems, setTotalItems] = useState(0)
+  // const [cart, setCart] = useState({
+  //   total: 0,
+  //   quantity: 0
+  // })
 
   useEffect(() => {
     fetch("http://localhost:3003/confections")
@@ -25,21 +27,14 @@ function App() {
   }, [])
 
   const handleOrderClick = (item) => {
-    // const newTotal = item.cartTotal + item.price
-    // const newIncart = item.
-    // setCart({
-    //   total: newTotal,
-    //   inCart: newIncart
-    // })
-    let newItems = confectionItems.map(i  => i.id !== item.id ? item : {
-      ...item,
-      inCart: i.incart++,
-      cartTotal: i.cartTotal += i.price
-    }) 
-
-    console.log(newItems)
-    // setConfectionItems(newItems)
+    // console.log(item)
+    item.incart++
+    item.carttotal = item.incart * item.price
+    setTotalPrice(totalPrice + item.price)
+    setTotalQuantity(totalQuantity + 1)
   }
+
+  console.log(confectionItems)
 
   return (
     <div className="App">
@@ -56,7 +51,7 @@ function App() {
             <Confections confectionItems={confectionItems} handleOrderClick={handleOrderClick}/>
           </Route>
           <Route exact path="/order">
-            <Order cartItems={cart.inCart} totalPrice={cart.total} confectionItems={confectionItems}/>
+            <Order confectionItems={confectionItems} totalPrice={totalPrice} totalQuantity={totalQuantity}/>
           </Route>
           <Route exact path="/contact">
             <Contact />

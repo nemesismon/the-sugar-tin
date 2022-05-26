@@ -11,7 +11,7 @@ function Confections ({ confectionItems, handleOrderClick }) {
                     <h3 className="name">{item.name}</h3>
                     <h4 className="description">{item.description}</h4>
                     <h4 className="type">{item.type}</h4>
-                    <h4 className="price">$ {(item.price).toFixed(2)} / dozen</h4>
+                    <h4 className="price">$ {item.price} / dozen</h4>
                     <button onClick={() => handleOrderClick(item)}>Add To Order</button>
                 </div>
             </div>
