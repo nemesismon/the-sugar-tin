@@ -29,10 +29,9 @@ function Contact ({ handleContactEntry, firstName, lastName, email, phone, subje
                 <textarea placeholder="Provide further details here..." onChange={handMessage} value={message} required></textarea>
                 <br></br>
                 <br></br>
+                <label>* All fields required</label><br></br>
                 <button type="submit" onClick={handleContactEntry}>Submit</button>
-                <br></br>
-                <br></br>
-                <label>* All fields required</label>
+                
                 </div>
             </form>
         </div>

@@ -13,7 +13,7 @@ function Order ({ confectionItems, totalPrice, totalQuantity }) {
 
                 return (
                     <div key={item.id} className="ordered-items">
-                        <h4>{item.name} &emsp; &emsp; Quantity: {item.incart} dozen &emsp; &emsp; $ {(item.price).toFixed(2)} &emsp; &emsp; $ {extendedPrice.toFixed(2)} </h4>
+                        <h4> &emsp; &emsp; {item.name} &emsp; &emsp; Quantity: {item.incart} dozen &emsp; &emsp; $ {(item.price).toFixed(2)} &emsp; &emsp; $ {extendedPrice.toFixed(2)} </h4>
                     </div>
                 )
             })

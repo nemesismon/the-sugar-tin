@@ -9,23 +9,44 @@
 }
 
 .container {
-    padding: 2px 16px;
+    padding: 4px 4px;
+    width: 75%;
+    height: 150px;
 }
 
 .picture {
-    left: 0px;
-    width: 125;
-    height: 125;
+    position: absolute;
+    left: 10px;
+    width: 9.5%;
+    height: auto;
 }
 
 .name {
-    position: relative;
+    position: absolute;
+    left: 175px;
 }
 
 .description {
-    position: relative;
+    position: absolute;
+    left: 200px;
+    margin-top: 3.5%;
+    text-align: left;
 }
 
 .type {
-    position: 0;
+    position: absolute;
+    left: 175px;
+    margin-top: 7%;
+}
+
+.price {
+    position: absolute;
+    left: 65%;
+    margin-top: 7%;
+}
+
+.button {
+    position: absolute;
+    left: 75%;
+    margin-top: 7%;
 }
