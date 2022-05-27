@@ -1,8 +1,7 @@
 import React from "react";
+import "./Order.css"
 
 function Order ({ confectionItems, totalPrice, totalQuantity }) {
-
-    console.log(confectionItems)
 
     const orderHandler = () => {
 
@@ -11,7 +10,6 @@ function Order ({ confectionItems, totalPrice, totalQuantity }) {
             return confectionItems.filter((item) => item.incart > 0).map((item) => {
 
                 const extendedPrice = item.incart * item.price;
-                console.log(item)
 
                 return (
                     <div key={item.id} className="ordered-items">
@@ -23,6 +21,7 @@ function Order ({ confectionItems, totalPrice, totalQuantity }) {
         } else {        
             return (
                 <div>
+                    <br></br>
                     <h3>Your cart is empty, please check out our Confections!</h3>
                 </div>
             )     

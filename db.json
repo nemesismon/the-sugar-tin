@@ -1,26 +1,350 @@
 {
   "confections": [
-      {
-          "id": 0,
-          "name": "Cupcake/cookie name/flavor",
-          "picture": "",
-          "description": "Description of item",
-          "type": "Type of item",
-          "price": 20.00,
-          "active": true,
-          "incart": 0,
-          "carttotal": 0.00
-      },
-      {
-          "id": 1,
-          "name": "Cupcake/cookie name/flavor",
-          "picture": "",
-          "description": "Description of item",
-          "type": "Type of item",
-          "price": 30.00,
-          "active": true,
-          "incart": 0,
-          "carttotal": 0.00
-      }
+    {
+      "id": 0,
+      "name": "Chocolate",
+      "picture": "",
+      "description": " - ",
+      "type": "traditional",
+      "price": 27,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 1,
+      "name": "White Wedding",
+      "picture": "",
+      "description": " - ",
+      "type": "traditional",
+      "price": 27,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 2,
+      "name": "Buttermilk Yellow",
+      "picture": "",
+      "description": " - ",
+      "type": "traditional",
+      "price": 27,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 3,
+      "name": "Red Velvet",
+      "picture": "",
+      "description": " - ",
+      "type": "traditional",
+      "price": 27,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 4,
+      "name": "Grovestand Lemon",
+      "picture": "",
+      "description": " - ",
+      "type": "traditional",
+      "price": 27,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 5,
+      "name": "Mocha Espresso",
+      "picture": "",
+      "description": "chocolate cake infused with espresso and topped with seven-miute frosting",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 6,
+      "name": "Mocha Espresso (w/ Espresso Cream filling",
+      "picture": "",
+      "description": "chocolate cake infused with espresso and topped with seven-miute frosting",
+      "type": "gourmet",
+      "price": 35,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 7,
+      "name": "Chocolate Raspberry",
+      "picture": "",
+      "description": "chocolate cake topped with a raspberry reduction buttercream frosting",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 8,
+      "name": "Chocolate Raspberry (w/ Nutella filling)",
+      "picture": "",
+      "description": "chocolate cake topped with a raspberry reduction buttercream frosting",
+      "type": "gourmet",
+      "price": 35,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 9,
+      "name": "Chocolate Covered Cherry",
+      "picture": "",
+      "description": "rich chocolate cake with cherry chunks topped with cherry almond buttercream frosting",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 10,
+      "name": "`Hostess` with the Mostest",
+      "picture": "",
+      "description": "chocolate cake filled with fluffy marshmallow cream topped with chocolate ganache and a signature swirl",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 11,
+      "name": "Pumpkin Spice",
+      "picture": "",
+      "description": "pumpkin cupcake with warm spices and topped with cream cheese frosting",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 12,
+      "name": "Old Fashioned Carrot Cake",
+      "picture": "",
+      "description": "fresh shredded carrots, rum soaked raisins, and walnuts, in a brown sugar cake topped with cream cheese frosting",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 13,
+      "name": "German Chocolate",
+      "picture": "",
+      "description": "German Chocolate cake topped with a light chocolate frosted ring and finished with caramel pecan/coconut frosting",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 14,
+      "name": "German Chocolate (w/ caramel pecan/coconut filling)",
+      "picture": "",
+      "description": "German Chocolate cake topped with a light chocolate frosted ring and finished with caramel pecan/coconut frosting",
+      "type": "gourmet",
+      "price": 35,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 15,
+      "name": "Margarita",
+      "picture": "",
+      "description": "light graham cracker cake soaked with margarita simple syrup topped with lime buttercream frostin",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 16,
+      "name": "Margarita (w/ key lime curd filling)",
+      "picture": "",
+      "description": "light graham cracker cake soaked with margarita simple syrup topped with lime buttercream frostin",
+      "type": "gourmet",
+      "price": 35,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 17,
+      "name": "Orange Crusher Creamsicle",
+      "picture": "",
+      "description": "our traditional white cake flavored with Orange Crush and topped with orange creamsicle buttercream frosting",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 18,
+      "name": "The Buckeye",
+      "picture": "",
+      "description": "chocolate cake topped with chocolate frosting and a Reese's Cup",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 19,
+      "name": "The Buckeye (w/ peanut butter filling",
+      "picture": "",
+      "description": "chocolate cake topped with chocolate frosting and a Reese's Cup",
+      "type": "gourmet",
+      "price": 35,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 20,
+      "name": "White Chocolate Macedamia Nut",
+      "picture": "",
+      "description": "white chocolate cake topped with white chocolate butterscream and a fresh raspberry",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 21,
+      "name": "White Chocolate Macedamia Nut (w/ raspberry Amaretto reduction filling",
+      "picture": "",
+      "description": "white chocolate cake topped with white chocolate butterscream and a fresh raspberry",
+      "type": "gourmet",
+      "price": 35,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 22,
+      "name": "Coconut Cream Pie",
+      "picture": "",
+      "description": "white coconut cake topped with whipped buttercream frosting and toasted coconut, filled with coconut cream custard",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 23,
+      "name": "Pineapple Upside Down",
+      "picture": "",
+      "description": "yellow pineapple cake topped with a brown sugar blend, pineapple, and a cherry",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 24,
+      "name": "Andes Minty Grasshopper",
+      "picture": "",
+      "description": "minty chocolate cake topped with whipped cream cheese frosting",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 25,
+      "name": "Andes Minty Grasshopper (w/ mint cream filling)",
+      "picture": "",
+      "description": "minty chocolate cake topped with whipped cream cheese frosting",
+      "type": "gourmet",
+      "price": 35,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 26,
+      "name": "Oreo Bliss",
+      "picture": "",
+      "description": "our traditional white cake filled with an OREO and topped with OREO crumble buttercream frosting",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    },
+    {
+      "id": 27,
+      "name": "Boston Cream Pie",
+      "picture": "",
+      "description": "old fashioned buttermilk yellow cake, sliced and filled with real vanilla bean custard filling, and topped with ganache",
+      "type": "gourmet",
+      "price": 30,
+      "active": true,
+      "incart": 0,
+      "carttotal": 0
+    }
+  ],
+  "contact": [
+    {
+      "firstName": "hi",
+      "lastName": "hi",
+      "email": "hi@email.com",
+      "phone": "2342342345",
+      "subject": "hi",
+      "message": "hi",
+      "id": 1
+    },
+    {
+      "firstName": "hi",
+      "lastName": "hi",
+      "email": "hi@email.com",
+      "phone": "2342342345",
+      "subject": "hi",
+      "message": "hi",
+      "id": 2
+    },
+    {
+      "firstName": "hi",
+      "lastName": "hi",
+      "email": "hi@email.com",
+      "phone": "2342342345",
+      "subject": "hi",
+      "message": "hi",
+      "id": 3
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Kolb",
+      "email": "michael.w.kolb@gmail.com",
+      "phone": "6145173942",
+      "subject": "Need to speak about order for KOLB",
+      "message": "Our event has grown and need to increase order size please!",
+      "id": 4
+    }
   ]
 }

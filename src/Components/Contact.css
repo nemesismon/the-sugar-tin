@@ -1,0 +1,17 @@
+.form-box label {
+    display: block;
+    width: 100%;
+}
+
+.form-box input {
+    display: center;
+    width: 25%;
+    border: 2px solid hotpink;
+}
+
+.form-box textarea {
+    display: center;
+    width: 75%;
+    height: auto;
+    border: 2px solid hotpink;
+}
