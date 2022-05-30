@@ -77,8 +77,6 @@ function App() {
         },
         body: JSON.stringify(formData),
       })
-      // .then((response) => response.json())
-      // .then((data) => console.log(data))
 
       setFirstName("")
       setLastName("")

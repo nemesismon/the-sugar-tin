@@ -9,8 +9,9 @@ function About () {
         </p>
 
         <p><b>
-            ~ Angela B. , Founder/CCB
+            ~ Angi B. , Founder/CCB
         </b></p>
+        <img src="./Angi.png" />
         </div>
     )
 }
